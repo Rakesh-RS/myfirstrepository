@@ -16,6 +16,7 @@ public class SensorController {
 	
 	@GetMapping
 	public void testSensor() {
+		System.out.println("Testttttttttt");
 		 sensorService.receiveDepth();
 	}
 
