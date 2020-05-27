@@ -48,11 +48,11 @@ public class UserServiceImpl  implements UserService{
 
 	@Override
 	public List<User> getAllUser() {
-		
 		List<User> userList = null;
 		try {
 			 userList = userDao.getAllUser();
 			userList.stream().forEach(user -> user.setName(user.getName()));
+			
 		}catch (Exception e) {
 			System.out.println(e);
 		}
